@@ -1,0 +1,64 @@
+menu "ST7789 Configuration"
+
+    config ST7789_DC
+        int "ST7789_DC GPIO number"
+        default 9 if IDF_TARGET_ESP32S3
+
+    config ST7789_CS
+            int "ST7789_CS GPIO number"
+            default 10 if IDF_TARGET_ESP32S3
+
+    config ST7789_CLK
+            int "ST7789_CLK GPIO number"
+            default 12 if IDF_TARGET_ESP32S3
+
+    config ST7789_MOSI
+            int "ST7789_MOSI GPIO number"
+            default 11 if IDF_TARGET_ESP32S3
+
+    config ST7789_BLK
+            int "ST7789_BLK GPIO number"
+            default 46 if IDF_TARGET_ESP32S3
+
+endmenu
+
+
+menu "I2S Configuration"
+
+    config I2S_WS
+        int "I2S_WS GPIO number"
+        default 7 if IDF_TARGET_ESP32S3
+
+    config I2S_SCK
+            int "I2S_SCK GPIO number"
+            default 16 if IDF_TARGET_ESP32S3
+
+    config I2S_MIC
+            int "I2S_MIC GPIO number"
+            default 15 if IDF_TARGET_ESP32S3
+
+    config 2812
+            int "2812 GPIO number"
+            default 38 if IDF_TARGET_ESP32S3
+
+endmenu
+
+menu "SD Configuration"
+
+    config SD_CLK
+        int "SD_CLK GPIO number"
+        default 3 if IDF_TARGET_ESP32S3
+
+    config SD_MOSI
+            int "SD_MOSI GPIO number"
+            default 4 if IDF_TARGET_ESP32S3
+
+    config SD_MISO
+            int "SD_MISO GPIO number"
+            default 14 if IDF_TARGET_ESP32S3
+
+    config SD_CS
+            int "SD_CS GPIO number"
+            default 8 if IDF_TARGET_ESP32S3
+
+endmenu

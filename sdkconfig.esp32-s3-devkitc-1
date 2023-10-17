@@ -414,6 +414,34 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# ST7789 Configuration
+#
+CONFIG_ST7789_DC=9
+CONFIG_ST7789_CS=10
+CONFIG_ST7789_CLK=12
+CONFIG_ST7789_MOSI=11
+CONFIG_ST7789_BLK=46
+# end of ST7789 Configuration
+
+#
+# I2S Configuration
+#
+CONFIG_I2S_WS=7
+CONFIG_I2S_SCK=16
+CONFIG_I2S_MIC=15
+CONFIG_2812=38
+# end of I2S Configuration
+
+#
+# SD Configuration
+#
+CONFIG_SD_CLK=3
+CONFIG_SD_MOSI=4
+CONFIG_SD_MISO=14
+CONFIG_SD_CS=8
+# end of SD Configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y
